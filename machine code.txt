@@ -1,0 +1,40 @@
+***Instruction memory
+0.)LD R1, @A    ;Load operand from address A to R1
+q=0, OPCODE=1000, rd=01, s1s2=0000(equals to address 0)
+01000010000
+
+1.)LD R2, @C    ;Load operand from address C to R2
+q=0, OPCODE=1000, rd=10, s1s2=0001(equals to address 1)
+01000100001
+
+2.)INC R0, R2	;Increment R2 (counter) and store to R0
+q=x, OPCODE=0110, rd=00, s1=10, s2=xx
+00110001000
+
+3.)JMP 8, Q	;If v= 1 jump to HLT and finish the program
+q=1, OPCODE=1110, x, Address=01000
+11110001000
+
+4.TSF R2, R0	;Transfer counter value to R2.
+q=x, OPCODE=1010, rd=10, s1=00, s2=xx
+01010100000
+
+5.)ADD R0, R1,	R2 ;Add R1 and R2, store in R0
+q=X, OPCODE=0111, rd=00 s1=01 s2=10
+00111000110
+
+6.)TSF R1, R0	;Transfer R0 (sum) to R1
+q=x, OPCODE=1010, rd=01, s1=00, s2=xx
+01010010000
+
+7.)JMR -5	;Jump to beginning of loop
+q=x, OPCODE=1111, xx, address=1011
+01111001011
+
+8.)HLT
+q=x, OPCODE=0000, xxxxxx
+00000000000
+
+***Data memory
+address=0000, value=0010
+address=0001, value=1100

@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="group32">
+		<CBX_INST_ENTRY INSTANCE_NAME="|group32|ALUselectionmux:inst|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_k6e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|group32|shift:inst13|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_96e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|group32|ALUadder:inst3|lpm_add_sub:LPM_ADD_SUB_component" CBX_FILE_NAME="add_sub_3ai.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component" CBX_FILE_NAME="add_sub_3ai.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|group32|overflowmux:inst1|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_h6e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|group32|shift:inst10|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_96e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|group32|shift:inst12|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_96e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|group32|shift:inst14|LPM_MUX:LPM_MUX_component" CBX_FILE_NAME="mux_96e.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

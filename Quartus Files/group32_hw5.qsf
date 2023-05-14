@@ -1,0 +1,102 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# Date created = 17:37:30  April 07, 2022
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		group32_hw5_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone III"
+set_global_assignment -name DEVICE EP3C16F484C6
+set_global_assignment -name TOP_LEVEL_ENTITY group32_hw7
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "17:37:30  APRIL 07, 2022"
+set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+set_global_assignment -name HEX_FILE datamemory.hex
+set_global_assignment -name QIP_FILE datamemory.qip
+set_global_assignment -name HEX_FILE instrmemory.hex
+set_global_assignment -name QIP_FILE instructionmemory.qip
+set_global_assignment -name QIP_FILE ar.qip
+set_global_assignment -name BDF_FILE group32_hw5.bdf
+set_global_assignment -name QIP_FILE pc.qip
+set_global_assignment -name QIP_FILE stackpointer.qip
+set_global_assignment -name QIP_FILE stackmemory.qip
+set_global_assignment -name QIP_FILE inputregister.qip
+set_global_assignment -name QIP_FILE generalreg0.qip
+set_global_assignment -name QIP_FILE generalreg1.qip
+set_global_assignment -name QIP_FILE generalreg2.qip
+set_global_assignment -name QIP_FILE s1.qip
+set_global_assignment -name QIP_FILE s2.qip
+set_global_assignment -name QIP_FILE IR.qip
+set_global_assignment -name QIP_FILE instrdecoder.qip
+set_global_assignment -name QIP_FILE pcardecoder.qip
+set_global_assignment -name QIP_FILE wrdecider.qip
+set_global_assignment -name QIP_FILE busmux.qip
+set_global_assignment -name QIP_FILE outputreg.qip
+set_global_assignment -name QIP_FILE finalmux.qip
+set_global_assignment -name VECTOR_WAVEFORM_FILE group32_hw5_waveform.vwf
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name VECTOR_OUTPUT_FORMAT VWF
+set_global_assignment -name VECTOR_WAVEFORM_FILE deneme.vwf
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
+set_global_assignment -name VECTOR_WAVEFORM_FILE checkpoint.vwf
+set_global_assignment -name QIP_FILE sequencecounter.qip
+set_global_assignment -name QIP_FILE Tdecoder.qip
+set_global_assignment -name QIP_FILE Ddecoder.qip
+set_global_assignment -name QIP_FILE pcmux.qip
+set_global_assignment -name QIP_FILE jmradder.qip
+set_global_assignment -name QIP_FILE armux.qip
+set_global_assignment -name QIP_FILE rdmux.qip
+set_global_assignment -name QIP_FILE finalmuxes.qip
+set_global_assignment -name QIP_FILE finalreg.qip
+set_global_assignment -name QIP_FILE finallmux.qip
+set_global_assignment -name HEX_FILE imemory.hex
+set_global_assignment -name HEX_FILE dmemory.hex
+set_global_assignment -name VECTOR_WAVEFORM_FILE group32_hw6_waveform.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE DNM1.vwf
+set_global_assignment -name BDF_FILE group32_hw6.bdf
+set_global_assignment -name BDF_FILE group32_hw7.bdf
+set_global_assignment -name HEX_FILE smemory.hex
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name VECTOR_WAVEFORM_FILE group32_hw7_waveform.vwf
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/quartus/projects/group32_hw5/group32_hw7_waveform.vwf"

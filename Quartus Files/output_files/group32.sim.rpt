@@ -1,0 +1,555 @@
+Simulator report for group32
+Thu Apr 21 15:44:07 2022
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 165 nodes    ;
+; Simulation Coverage         ;       0.00 % ;
+; Total Number of Transitions ; 0            ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone III  ;
++-----------------------------+--------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                    ;
++--------------------------------------------------------------------------------------------+----------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                  ; Default Value ;
++--------------------------------------------------------------------------------------------+----------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                               ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                     ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                      ;               ;
+; Vector input source                                                                        ; C:/quartus/projects/group32_hw5/group32_hw5_waveform.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                       ; On            ;
+; Check outputs                                                                              ; Off                                                      ; Off           ;
+; Report simulation coverage                                                                 ; On                                                       ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                       ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                       ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                       ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                      ; Off           ;
+; Detect glitches                                                                            ; Off                                                      ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                      ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                      ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                      ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                      ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                       ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                               ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                      ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                      ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                     ; Auto          ;
+; Interconnect Delay Model Type                                                              ; Transport                                                ; Transport     ;
+; Cell Delay Model Type                                                                      ; Transport                                                ; Transport     ;
++--------------------------------------------------------------------------------------------+----------------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;       0.00 % ;
+; Total nodes checked                                 ; 165          ;
+; Total output ports checked                          ; 165          ;
+; Total output ports with complete 1/0-value coverage ; 0            ;
+; Total output ports with no 1/0-value coverage       ; 165          ;
+; Total output ports with no 1-value coverage         ; 165          ;
+; Total output ports with no 0-value coverage         ; 165          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++-------------------------------------------------+
+; Complete 1/0-Value Coverage                     ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                                                             ;
++-------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                       ; Output Port Name                                                                                ; Output Port Type ;
++-------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------+------------------+
+; |group32|overflowresult                                                                         ; |group32|overflowresult                                                                         ; pin_out          ;
+; |group32|RS[3]                                                                                  ; |group32|RS[3]                                                                                  ; out              ;
+; |group32|RS[2]                                                                                  ; |group32|RS[2]                                                                                  ; out              ;
+; |group32|RS[1]                                                                                  ; |group32|RS[1]                                                                                  ; out              ;
+; |group32|RS[0]                                                                                  ; |group32|RS[0]                                                                                  ; out              ;
+; |group32|S2[3]                                                                                  ; |group32|S2[3]                                                                                  ; out              ;
+; |group32|S2[2]                                                                                  ; |group32|S2[2]                                                                                  ; out              ;
+; |group32|S2[1]                                                                                  ; |group32|S2[1]                                                                                  ; out              ;
+; |group32|S2[0]                                                                                  ; |group32|S2[0]                                                                                  ; out              ;
+; |group32|ALUselect[2]                                                                           ; |group32|ALUselect[2]                                                                           ; out              ;
+; |group32|ALUselect[1]                                                                           ; |group32|ALUselect[1]                                                                           ; out              ;
+; |group32|ALUselect[0]                                                                           ; |group32|ALUselect[0]                                                                           ; out              ;
+; |group32|ALUmuxresult[3]                                                                        ; |group32|ALUmuxresult[3]                                                                        ; pin_out          ;
+; |group32|ALUmuxresult[2]                                                                        ; |group32|ALUmuxresult[2]                                                                        ; pin_out          ;
+; |group32|ALUmuxresult[1]                                                                        ; |group32|ALUmuxresult[1]                                                                        ; pin_out          ;
+; |group32|ALUmuxresult[0]                                                                        ; |group32|ALUmuxresult[0]                                                                        ; pin_out          ;
+; |group32|inst66[3]                                                                              ; |group32|inst66[3]                                                                              ; out0             ;
+; |group32|inst66[2]                                                                              ; |group32|inst66[2]                                                                              ; out0             ;
+; |group32|inst66[1]                                                                              ; |group32|inst66[1]                                                                              ; out0             ;
+; |group32|inst66[0]                                                                              ; |group32|inst66[0]                                                                              ; out0             ;
+; |group32|inst11[3]                                                                              ; |group32|inst11[3]                                                                              ; out0             ;
+; |group32|inst11[2]                                                                              ; |group32|inst11[2]                                                                              ; out0             ;
+; |group32|inst11[1]                                                                              ; |group32|inst11[1]                                                                              ; out0             ;
+; |group32|inst11[0]                                                                              ; |group32|inst11[0]                                                                              ; out0             ;
+; |group32|shift:inst10|lpm_mux:LPM_MUX_component|mux_96e:auto_generated|result_node[0]~1         ; |group32|shift:inst10|lpm_mux:LPM_MUX_component|mux_96e:auto_generated|result_node[0]~1         ; out0             ;
+; |group32|shift:inst13|lpm_mux:LPM_MUX_component|mux_96e:auto_generated|result_node[0]~0         ; |group32|shift:inst13|lpm_mux:LPM_MUX_component|mux_96e:auto_generated|result_node[0]~0         ; out0             ;
+; |group32|shift:inst13|lpm_mux:LPM_MUX_component|mux_96e:auto_generated|result_node[0]~1         ; |group32|shift:inst13|lpm_mux:LPM_MUX_component|mux_96e:auto_generated|result_node[0]~1         ; out0             ;
+; |group32|shift:inst13|lpm_mux:LPM_MUX_component|mux_96e:auto_generated|result_node[0]           ; |group32|shift:inst13|lpm_mux:LPM_MUX_component|mux_96e:auto_generated|result_node[0]           ; out0             ;
+; |group32|shift:inst12|lpm_mux:LPM_MUX_component|mux_96e:auto_generated|result_node[0]~0         ; |group32|shift:inst12|lpm_mux:LPM_MUX_component|mux_96e:auto_generated|result_node[0]~0         ; out0             ;
+; |group32|shift:inst12|lpm_mux:LPM_MUX_component|mux_96e:auto_generated|result_node[0]~1         ; |group32|shift:inst12|lpm_mux:LPM_MUX_component|mux_96e:auto_generated|result_node[0]~1         ; out0             ;
+; |group32|shift:inst12|lpm_mux:LPM_MUX_component|mux_96e:auto_generated|result_node[0]           ; |group32|shift:inst12|lpm_mux:LPM_MUX_component|mux_96e:auto_generated|result_node[0]           ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~14             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~14             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~15             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~15             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~18             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~18             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~19             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~19             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|result_node[3]~0 ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|result_node[3]~0 ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~22             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~22             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~27             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~27             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~28             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~28             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~31             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~31             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~36             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~36             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~37             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~37             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~40             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~40             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~41             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~41             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~42             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~42             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|result_node[3]~1 ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|result_node[3]~1 ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|result_node[3]   ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|result_node[3]   ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~43             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~43             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~45             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~45             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~47             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~47             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~48             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~48             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~49             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~49             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~50             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~50             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~52             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~52             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~54             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~54             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~56             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~56             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~57             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~57             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~58             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~58             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~59             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~59             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~61             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~61             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~62             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~62             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~63             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~63             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|result_node[2]~2 ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|result_node[2]~2 ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~65             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~65             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~70             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~70             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~71             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~71             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~74             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~74             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~79             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~79             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~80             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~80             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~83             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~83             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~84             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~84             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~85             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~85             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|result_node[2]~3 ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|result_node[2]~3 ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|result_node[2]   ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|result_node[2]   ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~86             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~86             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~88             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~88             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~90             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~90             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~91             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~91             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~92             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~92             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~93             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~93             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~95             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~95             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~97             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~97             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~99             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~99             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~100            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~100            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~101            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~101            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~102            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~102            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~104            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~104            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~105            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~105            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~106            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~106            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|result_node[1]~4 ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|result_node[1]~4 ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~108            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~108            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~113            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~113            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~114            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~114            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~117            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~117            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~122            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~122            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~123            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~123            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~126            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~126            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~127            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~127            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~128            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~128            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|result_node[1]~5 ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|result_node[1]~5 ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|result_node[1]   ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|result_node[1]   ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~129            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~129            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~131            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~131            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~133            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~133            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~134            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~134            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~135            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~135            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~136            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~136            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~138            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~138            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~140            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~140            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~142            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~142            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~143            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~143            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~144            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~144            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~145            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~145            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~147            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~147            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~148            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~148            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~149            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~149            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|result_node[0]~6 ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|result_node[0]~6 ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~151            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~151            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~156            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~156            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~157            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~157            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~160            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~160            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~165            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~165            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~166            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~166            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~169            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~169            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~170            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~170            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~171            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~171            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|result_node[0]~7 ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|result_node[0]~7 ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|result_node[0]   ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|result_node[0]   ; out0             ;
+; |group32|overflowmux:inst1|lpm_mux:LPM_MUX_component|mux_h6e:auto_generated|_~0                 ; |group32|overflowmux:inst1|lpm_mux:LPM_MUX_component|mux_h6e:auto_generated|_~0                 ; out0             ;
+; |group32|overflowmux:inst1|lpm_mux:LPM_MUX_component|mux_h6e:auto_generated|_~5                 ; |group32|overflowmux:inst1|lpm_mux:LPM_MUX_component|mux_h6e:auto_generated|_~5                 ; out0             ;
+; |group32|overflowmux:inst1|lpm_mux:LPM_MUX_component|mux_h6e:auto_generated|_~6                 ; |group32|overflowmux:inst1|lpm_mux:LPM_MUX_component|mux_h6e:auto_generated|_~6                 ; out0             ;
+; |group32|overflowmux:inst1|lpm_mux:LPM_MUX_component|mux_h6e:auto_generated|_~9                 ; |group32|overflowmux:inst1|lpm_mux:LPM_MUX_component|mux_h6e:auto_generated|_~9                 ; out0             ;
+; |group32|overflowmux:inst1|lpm_mux:LPM_MUX_component|mux_h6e:auto_generated|_~14                ; |group32|overflowmux:inst1|lpm_mux:LPM_MUX_component|mux_h6e:auto_generated|_~14                ; out0             ;
+; |group32|overflowmux:inst1|lpm_mux:LPM_MUX_component|mux_h6e:auto_generated|_~15                ; |group32|overflowmux:inst1|lpm_mux:LPM_MUX_component|mux_h6e:auto_generated|_~15                ; out0             ;
+; |group32|overflowmux:inst1|lpm_mux:LPM_MUX_component|mux_h6e:auto_generated|_~18                ; |group32|overflowmux:inst1|lpm_mux:LPM_MUX_component|mux_h6e:auto_generated|_~18                ; out0             ;
+; |group32|overflowmux:inst1|lpm_mux:LPM_MUX_component|mux_h6e:auto_generated|_~19                ; |group32|overflowmux:inst1|lpm_mux:LPM_MUX_component|mux_h6e:auto_generated|_~19                ; out0             ;
+; |group32|overflowmux:inst1|lpm_mux:LPM_MUX_component|mux_h6e:auto_generated|_~20                ; |group32|overflowmux:inst1|lpm_mux:LPM_MUX_component|mux_h6e:auto_generated|_~20                ; out0             ;
+; |group32|overflowmux:inst1|lpm_mux:LPM_MUX_component|mux_h6e:auto_generated|result_node[0]~0    ; |group32|overflowmux:inst1|lpm_mux:LPM_MUX_component|mux_h6e:auto_generated|result_node[0]~0    ; out0             ;
+; |group32|overflowmux:inst1|lpm_mux:LPM_MUX_component|mux_h6e:auto_generated|_~37                ; |group32|overflowmux:inst1|lpm_mux:LPM_MUX_component|mux_h6e:auto_generated|_~37                ; out0             ;
+; |group32|overflowmux:inst1|lpm_mux:LPM_MUX_component|mux_h6e:auto_generated|_~41                ; |group32|overflowmux:inst1|lpm_mux:LPM_MUX_component|mux_h6e:auto_generated|_~41                ; out0             ;
+; |group32|overflowmux:inst1|lpm_mux:LPM_MUX_component|mux_h6e:auto_generated|result_node[0]~1    ; |group32|overflowmux:inst1|lpm_mux:LPM_MUX_component|mux_h6e:auto_generated|result_node[0]~1    ; out0             ;
+; |group32|overflowmux:inst1|lpm_mux:LPM_MUX_component|mux_h6e:auto_generated|result_node[0]      ; |group32|overflowmux:inst1|lpm_mux:LPM_MUX_component|mux_h6e:auto_generated|result_node[0]      ; out0             ;
+; |group32|ALUadder:inst3|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~0     ; |group32|ALUadder:inst3|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~0     ; out0             ;
+; |group32|ALUadder:inst3|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~1     ; |group32|ALUadder:inst3|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~1     ; out0             ;
+; |group32|ALUadder:inst3|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~2     ; |group32|ALUadder:inst3|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~2     ; out0             ;
+; |group32|ALUadder:inst3|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~3     ; |group32|ALUadder:inst3|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~3     ; out0             ;
+; |group32|ALUadder:inst3|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~4     ; |group32|ALUadder:inst3|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~4     ; out0             ;
+; |group32|ALUadder:inst3|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~5     ; |group32|ALUadder:inst3|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~5     ; out0             ;
+; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~0     ; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~0     ; out0             ;
+; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~1     ; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~1     ; out0             ;
+; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~2     ; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~2     ; out0             ;
+; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~3     ; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~3     ; out0             ;
+; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~4     ; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~4     ; out0             ;
+; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~5     ; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~5     ; out0             ;
+; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~6     ; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~6     ; out0             ;
+; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~7     ; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~7     ; out0             ;
+; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~8     ; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~8     ; out0             ;
+; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~9     ; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~9     ; out0             ;
+; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~10    ; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~10    ; out0             ;
+; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~11    ; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~11    ; out0             ;
+; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~12    ; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~12    ; out0             ;
+; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~13    ; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~13    ; out0             ;
+; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~14    ; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~14    ; out0             ;
+; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~15    ; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~15    ; out0             ;
+; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~16    ; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~16    ; out0             ;
++-------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                                                             ;
++-------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                       ; Output Port Name                                                                                ; Output Port Type ;
++-------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------+------------------+
+; |group32|overflowresult                                                                         ; |group32|overflowresult                                                                         ; pin_out          ;
+; |group32|RS[3]                                                                                  ; |group32|RS[3]                                                                                  ; out              ;
+; |group32|RS[2]                                                                                  ; |group32|RS[2]                                                                                  ; out              ;
+; |group32|RS[1]                                                                                  ; |group32|RS[1]                                                                                  ; out              ;
+; |group32|RS[0]                                                                                  ; |group32|RS[0]                                                                                  ; out              ;
+; |group32|S2[3]                                                                                  ; |group32|S2[3]                                                                                  ; out              ;
+; |group32|S2[2]                                                                                  ; |group32|S2[2]                                                                                  ; out              ;
+; |group32|S2[1]                                                                                  ; |group32|S2[1]                                                                                  ; out              ;
+; |group32|S2[0]                                                                                  ; |group32|S2[0]                                                                                  ; out              ;
+; |group32|ALUselect[2]                                                                           ; |group32|ALUselect[2]                                                                           ; out              ;
+; |group32|ALUselect[1]                                                                           ; |group32|ALUselect[1]                                                                           ; out              ;
+; |group32|ALUselect[0]                                                                           ; |group32|ALUselect[0]                                                                           ; out              ;
+; |group32|ALUmuxresult[3]                                                                        ; |group32|ALUmuxresult[3]                                                                        ; pin_out          ;
+; |group32|ALUmuxresult[2]                                                                        ; |group32|ALUmuxresult[2]                                                                        ; pin_out          ;
+; |group32|ALUmuxresult[1]                                                                        ; |group32|ALUmuxresult[1]                                                                        ; pin_out          ;
+; |group32|ALUmuxresult[0]                                                                        ; |group32|ALUmuxresult[0]                                                                        ; pin_out          ;
+; |group32|inst66[3]                                                                              ; |group32|inst66[3]                                                                              ; out0             ;
+; |group32|inst66[2]                                                                              ; |group32|inst66[2]                                                                              ; out0             ;
+; |group32|inst66[1]                                                                              ; |group32|inst66[1]                                                                              ; out0             ;
+; |group32|inst66[0]                                                                              ; |group32|inst66[0]                                                                              ; out0             ;
+; |group32|inst11[3]                                                                              ; |group32|inst11[3]                                                                              ; out0             ;
+; |group32|inst11[2]                                                                              ; |group32|inst11[2]                                                                              ; out0             ;
+; |group32|inst11[1]                                                                              ; |group32|inst11[1]                                                                              ; out0             ;
+; |group32|inst11[0]                                                                              ; |group32|inst11[0]                                                                              ; out0             ;
+; |group32|shift:inst10|lpm_mux:LPM_MUX_component|mux_96e:auto_generated|result_node[0]~1         ; |group32|shift:inst10|lpm_mux:LPM_MUX_component|mux_96e:auto_generated|result_node[0]~1         ; out0             ;
+; |group32|shift:inst13|lpm_mux:LPM_MUX_component|mux_96e:auto_generated|result_node[0]~0         ; |group32|shift:inst13|lpm_mux:LPM_MUX_component|mux_96e:auto_generated|result_node[0]~0         ; out0             ;
+; |group32|shift:inst13|lpm_mux:LPM_MUX_component|mux_96e:auto_generated|result_node[0]~1         ; |group32|shift:inst13|lpm_mux:LPM_MUX_component|mux_96e:auto_generated|result_node[0]~1         ; out0             ;
+; |group32|shift:inst13|lpm_mux:LPM_MUX_component|mux_96e:auto_generated|result_node[0]           ; |group32|shift:inst13|lpm_mux:LPM_MUX_component|mux_96e:auto_generated|result_node[0]           ; out0             ;
+; |group32|shift:inst12|lpm_mux:LPM_MUX_component|mux_96e:auto_generated|result_node[0]~0         ; |group32|shift:inst12|lpm_mux:LPM_MUX_component|mux_96e:auto_generated|result_node[0]~0         ; out0             ;
+; |group32|shift:inst12|lpm_mux:LPM_MUX_component|mux_96e:auto_generated|result_node[0]~1         ; |group32|shift:inst12|lpm_mux:LPM_MUX_component|mux_96e:auto_generated|result_node[0]~1         ; out0             ;
+; |group32|shift:inst12|lpm_mux:LPM_MUX_component|mux_96e:auto_generated|result_node[0]           ; |group32|shift:inst12|lpm_mux:LPM_MUX_component|mux_96e:auto_generated|result_node[0]           ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~14             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~14             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~15             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~15             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~18             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~18             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~19             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~19             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|result_node[3]~0 ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|result_node[3]~0 ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~22             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~22             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~27             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~27             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~28             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~28             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~31             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~31             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~36             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~36             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~37             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~37             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~40             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~40             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~41             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~41             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~42             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~42             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|result_node[3]~1 ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|result_node[3]~1 ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|result_node[3]   ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|result_node[3]   ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~43             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~43             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~45             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~45             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~47             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~47             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~48             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~48             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~49             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~49             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~50             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~50             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~52             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~52             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~54             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~54             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~56             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~56             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~57             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~57             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~58             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~58             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~59             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~59             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~61             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~61             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~62             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~62             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~63             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~63             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|result_node[2]~2 ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|result_node[2]~2 ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~65             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~65             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~70             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~70             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~71             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~71             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~74             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~74             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~79             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~79             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~80             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~80             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~83             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~83             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~84             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~84             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~85             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~85             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|result_node[2]~3 ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|result_node[2]~3 ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|result_node[2]   ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|result_node[2]   ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~86             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~86             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~88             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~88             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~90             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~90             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~91             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~91             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~92             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~92             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~93             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~93             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~95             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~95             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~97             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~97             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~99             ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~99             ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~100            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~100            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~101            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~101            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~102            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~102            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~104            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~104            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~105            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~105            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~106            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~106            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|result_node[1]~4 ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|result_node[1]~4 ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~108            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~108            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~113            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~113            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~114            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~114            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~117            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~117            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~122            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~122            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~123            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~123            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~126            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~126            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~127            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~127            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~128            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~128            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|result_node[1]~5 ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|result_node[1]~5 ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|result_node[1]   ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|result_node[1]   ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~129            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~129            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~131            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~131            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~133            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~133            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~134            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~134            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~135            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~135            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~136            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~136            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~138            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~138            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~140            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~140            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~142            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~142            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~143            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~143            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~144            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~144            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~145            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~145            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~147            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~147            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~148            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~148            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~149            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~149            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|result_node[0]~6 ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|result_node[0]~6 ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~151            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~151            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~156            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~156            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~157            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~157            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~160            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~160            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~165            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~165            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~166            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~166            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~169            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~169            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~170            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~170            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~171            ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|_~171            ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|result_node[0]~7 ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|result_node[0]~7 ; out0             ;
+; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|result_node[0]   ; |group32|ALUselectionmux:inst|lpm_mux:LPM_MUX_component|mux_k6e:auto_generated|result_node[0]   ; out0             ;
+; |group32|overflowmux:inst1|lpm_mux:LPM_MUX_component|mux_h6e:auto_generated|_~0                 ; |group32|overflowmux:inst1|lpm_mux:LPM_MUX_component|mux_h6e:auto_generated|_~0                 ; out0             ;
+; |group32|overflowmux:inst1|lpm_mux:LPM_MUX_component|mux_h6e:auto_generated|_~5                 ; |group32|overflowmux:inst1|lpm_mux:LPM_MUX_component|mux_h6e:auto_generated|_~5                 ; out0             ;
+; |group32|overflowmux:inst1|lpm_mux:LPM_MUX_component|mux_h6e:auto_generated|_~6                 ; |group32|overflowmux:inst1|lpm_mux:LPM_MUX_component|mux_h6e:auto_generated|_~6                 ; out0             ;
+; |group32|overflowmux:inst1|lpm_mux:LPM_MUX_component|mux_h6e:auto_generated|_~9                 ; |group32|overflowmux:inst1|lpm_mux:LPM_MUX_component|mux_h6e:auto_generated|_~9                 ; out0             ;
+; |group32|overflowmux:inst1|lpm_mux:LPM_MUX_component|mux_h6e:auto_generated|_~14                ; |group32|overflowmux:inst1|lpm_mux:LPM_MUX_component|mux_h6e:auto_generated|_~14                ; out0             ;
+; |group32|overflowmux:inst1|lpm_mux:LPM_MUX_component|mux_h6e:auto_generated|_~15                ; |group32|overflowmux:inst1|lpm_mux:LPM_MUX_component|mux_h6e:auto_generated|_~15                ; out0             ;
+; |group32|overflowmux:inst1|lpm_mux:LPM_MUX_component|mux_h6e:auto_generated|_~18                ; |group32|overflowmux:inst1|lpm_mux:LPM_MUX_component|mux_h6e:auto_generated|_~18                ; out0             ;
+; |group32|overflowmux:inst1|lpm_mux:LPM_MUX_component|mux_h6e:auto_generated|_~19                ; |group32|overflowmux:inst1|lpm_mux:LPM_MUX_component|mux_h6e:auto_generated|_~19                ; out0             ;
+; |group32|overflowmux:inst1|lpm_mux:LPM_MUX_component|mux_h6e:auto_generated|_~20                ; |group32|overflowmux:inst1|lpm_mux:LPM_MUX_component|mux_h6e:auto_generated|_~20                ; out0             ;
+; |group32|overflowmux:inst1|lpm_mux:LPM_MUX_component|mux_h6e:auto_generated|result_node[0]~0    ; |group32|overflowmux:inst1|lpm_mux:LPM_MUX_component|mux_h6e:auto_generated|result_node[0]~0    ; out0             ;
+; |group32|overflowmux:inst1|lpm_mux:LPM_MUX_component|mux_h6e:auto_generated|_~37                ; |group32|overflowmux:inst1|lpm_mux:LPM_MUX_component|mux_h6e:auto_generated|_~37                ; out0             ;
+; |group32|overflowmux:inst1|lpm_mux:LPM_MUX_component|mux_h6e:auto_generated|_~41                ; |group32|overflowmux:inst1|lpm_mux:LPM_MUX_component|mux_h6e:auto_generated|_~41                ; out0             ;
+; |group32|overflowmux:inst1|lpm_mux:LPM_MUX_component|mux_h6e:auto_generated|result_node[0]~1    ; |group32|overflowmux:inst1|lpm_mux:LPM_MUX_component|mux_h6e:auto_generated|result_node[0]~1    ; out0             ;
+; |group32|overflowmux:inst1|lpm_mux:LPM_MUX_component|mux_h6e:auto_generated|result_node[0]      ; |group32|overflowmux:inst1|lpm_mux:LPM_MUX_component|mux_h6e:auto_generated|result_node[0]      ; out0             ;
+; |group32|ALUadder:inst3|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~0     ; |group32|ALUadder:inst3|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~0     ; out0             ;
+; |group32|ALUadder:inst3|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~1     ; |group32|ALUadder:inst3|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~1     ; out0             ;
+; |group32|ALUadder:inst3|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~2     ; |group32|ALUadder:inst3|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~2     ; out0             ;
+; |group32|ALUadder:inst3|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~3     ; |group32|ALUadder:inst3|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~3     ; out0             ;
+; |group32|ALUadder:inst3|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~4     ; |group32|ALUadder:inst3|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~4     ; out0             ;
+; |group32|ALUadder:inst3|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~5     ; |group32|ALUadder:inst3|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~5     ; out0             ;
+; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~0     ; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~0     ; out0             ;
+; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~1     ; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~1     ; out0             ;
+; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~2     ; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~2     ; out0             ;
+; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~3     ; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~3     ; out0             ;
+; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~4     ; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~4     ; out0             ;
+; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~5     ; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~5     ; out0             ;
+; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~6     ; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~6     ; out0             ;
+; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~7     ; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~7     ; out0             ;
+; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~8     ; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~8     ; out0             ;
+; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~9     ; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~9     ; out0             ;
+; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~10    ; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~10    ; out0             ;
+; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~11    ; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~11    ; out0             ;
+; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~12    ; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~12    ; out0             ;
+; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~13    ; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~13    ; out0             ;
+; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~14    ; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~14    ; out0             ;
+; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~15    ; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~15    ; out0             ;
+; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~16    ; |group32|ALUadder:inst7|lpm_add_sub:LPM_ADD_SUB_component|add_sub_3ai:auto_generated|op_1~16    ; out0             ;
++-------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Thu Apr 21 15:44:06 2022
+Info: Command: quartus_sim --simulation_results_format=VWF group32 -c group32
+Info (324025): Using vector source file "C:/quartus/projects/group32_hw5/group32_hw5_waveform.vwf"
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "aluinput0[3]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "aluinput0[2]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "aluinput0[1]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "aluinput0[0]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "aluinput1[3]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "aluinput1[2]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "aluinput1[1]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "aluinput1[0]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "arinput[3]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "arinput[2]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "arinput[1]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "arinput[0]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "busselection[2]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "busselection[1]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "busselection[0]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "instregister[10]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "instregister[9]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "instregister[8]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "instregister[7]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "instregister[6]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "instregister[5]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "instregister[4]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "instregister[3]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "instregister[2]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "instregister[1]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "instregister[0]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iregisterinput[3]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iregisterinput[2]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iregisterinput[1]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "iregisterinput[0]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "memory[3]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "memory[2]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "memory[1]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "memory[0]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "memoryclk" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "overflow" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "pcarirselection[1]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "pcarirselection[0]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "pcinput[4]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "pcinput[3]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "pcinput[2]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "pcinput[1]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "pcinput[0]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "rd[1]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "rd[0]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "registerclk" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "registeroutput[3]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "registeroutput[2]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "registeroutput[1]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "registeroutput[0]" in design.
+Warning (328013): Ignored node in vector source file. Can't find corresponding node name "wrinput" in design.
+Warning (328012): Can't find signal in vector source file for input pin "|group32|RS[3]"
+Warning (328012): Can't find signal in vector source file for input pin "|group32|RS[2]"
+Warning (328012): Can't find signal in vector source file for input pin "|group32|RS[1]"
+Warning (328012): Can't find signal in vector source file for input pin "|group32|RS[0]"
+Warning (328012): Can't find signal in vector source file for input pin "|group32|S2[3]"
+Warning (328012): Can't find signal in vector source file for input pin "|group32|S2[2]"
+Warning (328012): Can't find signal in vector source file for input pin "|group32|S2[1]"
+Warning (328012): Can't find signal in vector source file for input pin "|group32|S2[0]"
+Warning (328012): Can't find signal in vector source file for input pin "|group32|ALUselect[2]"
+Warning (328012): Can't find signal in vector source file for input pin "|group32|ALUselect[1]"
+Warning (328012): Can't find signal in vector source file for input pin "|group32|ALUselect[0]"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is       0.00 %
+Info (328052): Number of transitions in simulation is 0
+Info (324045): Vector file group32.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 62 warnings
+    Info: Peak virtual memory: 4443 megabytes
+    Info: Processing ended: Thu Apr 21 15:44:07 2022
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

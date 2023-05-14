@@ -1,0 +1,258 @@
+Flow report for group32_hw5
+Fri May 27 16:53:42 2022
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------+
+; Flow Summary                                                                         ;
++------------------------------------+-------------------------------------------------+
+; Flow Status                        ; Successful - Fri May 27 16:53:42 2022           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; group32_hw5                                     ;
+; Top-level Entity Name              ; group32_hw7                                     ;
+; Family                             ; Cyclone III                                     ;
+; Device                             ; EP3C16F484C6                                    ;
+; Timing Models                      ; Final                                           ;
+; Total logic elements               ; 142 / 15,408 ( < 1 % )                          ;
+;     Total combinational functions  ; 135 / 15,408 ( < 1 % )                          ;
+;     Dedicated logic registers      ; 48 / 15,408 ( < 1 % )                           ;
+; Total registers                    ; 48                                              ;
+; Total pins                         ; 81 / 347 ( 23 % )                               ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 496 / 516,096 ( < 1 % )                         ;
+; Embedded Multiplier 9-bit elements ; 0 / 112 ( 0 % )                                 ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                                   ;
++------------------------------------+-------------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 05/27/2022 12:51:50 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; group32_hw5         ;
++-------------------+---------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                    ;
++-------------------------------------+--------------------------------+---------------+-------------+----------------+
+; Assignment Name                     ; Value                          ; Default Value ; Entity Name ; Section Id     ;
++-------------------------------------+--------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 66160497854422.165364511011056 ; --            ; --          ; --             ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                             ; --            ; --          ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                    ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)      ; <None>        ; --          ; --             ;
+; IP_TOOL_NAME                        ; RAM: 1-PORT                    ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; ROM: 1-PORT                    ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_COUNTER                    ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_COUNTER                    ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_COUNTER                    ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; RAM: 1-PORT                    ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_COUNTER                    ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_COUNTER                    ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_COUNTER                    ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_COUNTER                    ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_MUX                        ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_MUX                        ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_COUNTER                    ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_DECODE                     ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_DECODE                     ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_DECODE                     ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_MUX                        ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_COUNTER                    ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_MUX                        ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_COUNTER                    ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_DECODE                     ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_DECODE                     ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_MUX                        ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_ADD_SUB                    ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_MUX                        ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_MUX                        ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_MUX                        ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_COUNTER                    ; --            ; --          ; --             ;
+; IP_TOOL_NAME                        ; LPM_MUX                        ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                           ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                           ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                           ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                           ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                           ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                           ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                           ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                           ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                           ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                           ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                           ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                           ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                           ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                           ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                           ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                           ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                           ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                           ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                           ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                           ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                           ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                           ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                           ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                           ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                           ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                           ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                           ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                           ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                     ; 13.0                           ; --            ; --          ; --             ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                             ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                              ; --            ; --          ; --             ;
+; MISC_FILE                           ; datamemory.bsf                 ; --            ; --          ; --             ;
+; MISC_FILE                           ; datamemory.cmp                 ; --            ; --          ; --             ;
+; MISC_FILE                           ; instructionmemory.bsf          ; --            ; --          ; --             ;
+; MISC_FILE                           ; instructionmemory.cmp          ; --            ; --          ; --             ;
+; MISC_FILE                           ; ar.bsf                         ; --            ; --          ; --             ;
+; MISC_FILE                           ; ar.cmp                         ; --            ; --          ; --             ;
+; MISC_FILE                           ; pc.bsf                         ; --            ; --          ; --             ;
+; MISC_FILE                           ; pc.cmp                         ; --            ; --          ; --             ;
+; MISC_FILE                           ; stackpointer.bsf               ; --            ; --          ; --             ;
+; MISC_FILE                           ; stackpointer.cmp               ; --            ; --          ; --             ;
+; MISC_FILE                           ; stackmemory.bsf                ; --            ; --          ; --             ;
+; MISC_FILE                           ; stackmemory.cmp                ; --            ; --          ; --             ;
+; MISC_FILE                           ; inputregister.bsf              ; --            ; --          ; --             ;
+; MISC_FILE                           ; inputregister.cmp              ; --            ; --          ; --             ;
+; MISC_FILE                           ; generalreg0.bsf                ; --            ; --          ; --             ;
+; MISC_FILE                           ; generalreg0.cmp                ; --            ; --          ; --             ;
+; MISC_FILE                           ; generalreg1.bsf                ; --            ; --          ; --             ;
+; MISC_FILE                           ; generalreg1.cmp                ; --            ; --          ; --             ;
+; MISC_FILE                           ; generalreg2.bsf                ; --            ; --          ; --             ;
+; MISC_FILE                           ; generalreg2.cmp                ; --            ; --          ; --             ;
+; MISC_FILE                           ; s1.bsf                         ; --            ; --          ; --             ;
+; MISC_FILE                           ; s1.cmp                         ; --            ; --          ; --             ;
+; MISC_FILE                           ; s2.bsf                         ; --            ; --          ; --             ;
+; MISC_FILE                           ; s2.cmp                         ; --            ; --          ; --             ;
+; MISC_FILE                           ; IR.bsf                         ; --            ; --          ; --             ;
+; MISC_FILE                           ; IR.cmp                         ; --            ; --          ; --             ;
+; MISC_FILE                           ; instrdecoder.bsf               ; --            ; --          ; --             ;
+; MISC_FILE                           ; instrdecoder.cmp               ; --            ; --          ; --             ;
+; MISC_FILE                           ; pcardecoder.bsf                ; --            ; --          ; --             ;
+; MISC_FILE                           ; pcardecoder.cmp                ; --            ; --          ; --             ;
+; MISC_FILE                           ; wrdecider.bsf                  ; --            ; --          ; --             ;
+; MISC_FILE                           ; wrdecider.cmp                  ; --            ; --          ; --             ;
+; MISC_FILE                           ; busmux.bsf                     ; --            ; --          ; --             ;
+; MISC_FILE                           ; busmux.cmp                     ; --            ; --          ; --             ;
+; MISC_FILE                           ; outputreg.bsf                  ; --            ; --          ; --             ;
+; MISC_FILE                           ; outputreg.cmp                  ; --            ; --          ; --             ;
+; MISC_FILE                           ; finalmux.bsf                   ; --            ; --          ; --             ;
+; MISC_FILE                           ; finalmux.cmp                   ; --            ; --          ; --             ;
+; MISC_FILE                           ; sequencecounter.bsf            ; --            ; --          ; --             ;
+; MISC_FILE                           ; sequencecounter.cmp            ; --            ; --          ; --             ;
+; MISC_FILE                           ; Tdecoder.bsf                   ; --            ; --          ; --             ;
+; MISC_FILE                           ; Tdecoder.cmp                   ; --            ; --          ; --             ;
+; MISC_FILE                           ; Ddecoder.bsf                   ; --            ; --          ; --             ;
+; MISC_FILE                           ; Ddecoder.cmp                   ; --            ; --          ; --             ;
+; MISC_FILE                           ; pcmux.bsf                      ; --            ; --          ; --             ;
+; MISC_FILE                           ; pcmux.cmp                      ; --            ; --          ; --             ;
+; MISC_FILE                           ; jmradder.bsf                   ; --            ; --          ; --             ;
+; MISC_FILE                           ; jmradder.cmp                   ; --            ; --          ; --             ;
+; MISC_FILE                           ; armux.bsf                      ; --            ; --          ; --             ;
+; MISC_FILE                           ; armux.cmp                      ; --            ; --          ; --             ;
+; MISC_FILE                           ; rdmux.bsf                      ; --            ; --          ; --             ;
+; MISC_FILE                           ; rdmux.cmp                      ; --            ; --          ; --             ;
+; MISC_FILE                           ; finalmuxes.bsf                 ; --            ; --          ; --             ;
+; MISC_FILE                           ; finalmuxes.cmp                 ; --            ; --          ; --             ;
+; MISC_FILE                           ; finalreg.bsf                   ; --            ; --          ; --             ;
+; MISC_FILE                           ; finalreg.cmp                   ; --            ; --          ; --             ;
+; MISC_FILE                           ; finallmux.bsf                  ; --            ; --          ; --             ;
+; MISC_FILE                           ; finallmux.cmp                  ; --            ; --          ; --             ;
+; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                           ; --            ; --          ; --             ;
+; PARTITION_COLOR                     ; 16764057                       ; --            ; group32_hw7 ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING          ; --            ; group32_hw7 ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                         ; --            ; group32_hw7 ; Top            ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                   ; --            ; --          ; --             ;
+; TOP_LEVEL_ENTITY                    ; group32_hw7                    ; group32_hw5   ; --          ; --             ;
++-------------------------------------+--------------------------------+---------------+-------------+----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:05     ; 1.0                     ; 4656 MB             ; 00:00:05                           ;
+; Fitter                    ; 00:00:09     ; 1.0                     ; 4909 MB             ; 00:00:09                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 4540 MB             ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 4585 MB             ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4497 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4505 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4505 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4505 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4505 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:22     ; --                      ; --                  ; 00:00:22                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; DESKTOP-HRTRVCV  ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; DESKTOP-HRTRVCV  ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; DESKTOP-HRTRVCV  ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; DESKTOP-HRTRVCV  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-HRTRVCV  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-HRTRVCV  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-HRTRVCV  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-HRTRVCV  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-HRTRVCV  ; Windows 7 ; 6.2        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off group32_hw5 -c group32_hw5
+quartus_fit --read_settings_files=off --write_settings_files=off group32_hw5 -c group32_hw5
+quartus_asm --read_settings_files=off --write_settings_files=off group32_hw5 -c group32_hw5
+quartus_sta group32_hw5 -c group32_hw5
+quartus_eda --read_settings_files=off --write_settings_files=off group32_hw5 -c group32_hw5
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog group32_hw5 -c group32_hw5 --vector_source=C:/quartus/projects/group32_hw5/group32_hw7_waveform.vwf --testbench_file=./simulation/qsim/group32_hw5.vt
+quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog group32_hw5 -c group32_hw5
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog group32_hw5 -c group32_hw5 --vector_source=C:/quartus/projects/group32_hw5/group32_hw7_waveform.vwf --testbench_file=./simulation/qsim/group32_hw5.vt
+quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog group32_hw5 -c group32_hw5
+
+
+
